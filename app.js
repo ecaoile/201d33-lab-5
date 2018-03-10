@@ -62,7 +62,7 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var sumOfTwoNums = sum(a, b)[0];
   var sumOfThreeNums = sum(sumOfTwoNums, c)[0];
   //console.log(sumOfThreeNums);
- 
+
   // second array element
   var productOfTwoNums = multiply(a, b)[0];
   var productOfThreeNums = multiply(productOfTwoNums, c)[0];
