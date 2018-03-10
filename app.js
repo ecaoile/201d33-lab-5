@@ -62,12 +62,21 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
   var sumOfTwoNums = sum(a, b)[0];
   var sumOfThreeNums = sum(sumOfTwoNums, c)[0];
   //console.log(sumOfThreeNums);
-
+ 
   // second array element
   var productOfTwoNums = multiply(a, b)[0];
   var productOfThreeNums = multiply(productOfTwoNums, c)[0];
   //console.log(productOfThreeNums);
 
+  // concatenate the strings
+  var sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumOfThreeNums + '.';
+  var productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productOfThreeNums + '.';
+
+  return [sumOfThreeNums, productOfThreeNums, sumString, productString];
+ }
+ 
+ // Here is the test for sumAndMultiply(); uncomment it to run it
+ testSumAndMultiply(4,7,5);
   // concatenate the strings
   var sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumOfThreeNums + '.';
   var productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productOfThreeNums + '.';
